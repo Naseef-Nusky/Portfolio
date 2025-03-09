@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../layouts/Title";
 // import Card from "./Card";
 // import { featuresData } from "../../data/data";
-import { bannerImg } from "../../assets";
+// import { bannerImg } from "../../assets";
 import { logo } from "../../assets";
 const Features = () => {
   return (
