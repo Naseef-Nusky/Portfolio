@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black flex flex-col gap-8 md:flex-row items-center justify-between">
       <div className="w-full h-full flex flex-col gap-8 items-center">
         <img className="w-32 rounded-full" src={logo} alt="logo" />
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
         <a href="https://www.linkedin.com/in/naseef-nusky/" target="_blank" rel="noopener noreferrer">
           <span className="bannerIcon">
             <FaLinkedinIn />
@@ -40,7 +40,7 @@ const Footer = () => {
         <h3 className="text-xl uppercase text-designColor tracking-wider pb-3">
           Quick Link
         </h3>
-        <ul className="flex flex-col gap-3 font-titleFont font-medium">
+        <ul className="flex flex-col gap-3 font-titleFont font-medium items-start">
   {navLinksdata.map(({ _id, title, link }) => (
     <li key={_id}>
       <Link

@@ -28,7 +28,7 @@ const ContactLeft = () => {
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
         <a href="https://www.linkedin.com/in/naseef-nusky/" target="_blank" rel="noopener noreferrer">
           <span className="bannerIcon">
             <FaLinkedinIn />
