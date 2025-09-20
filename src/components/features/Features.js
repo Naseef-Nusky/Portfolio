@@ -8,18 +8,18 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-b-black flex flex-col items-center justify-center"
     >
       <Title title="" des="About Me" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-20">
         {/* {featuresData.map((item) => (
           <Card item={item} key={item.id} />
         ))} */}
-        <div>
+        <div className="flex flex-col items-center justify-center">
         <img
           src={logo}
           alt="profile2"
-          class="rounded-full h-94 W-full"
+          className="rounded-full h-[300px] lg:h-[400px] w-auto object-cover"
         />
         </div>
     <div className="flex flex-col items-center justify-center">
