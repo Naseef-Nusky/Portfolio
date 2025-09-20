@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaDownload, FaInstagram, FaGithub} from "react-icons/fa";
-// import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between pt-10">
@@ -8,7 +7,7 @@ const Media = () => {
           <h2 className="text-base uppercase font-titleFont mb-4">My Resume</h2>
           <div className="">
             <a 
-              href="/path-to-your-resume.pdf" 
+              href="/assets/resume.pdf" 
               download 
               className="bannerIcon">
               <FaDownload />
