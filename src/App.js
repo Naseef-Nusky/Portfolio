@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
+import AIIntegrations from "./components/ai/AIIntegrations";
 import Services from "./components/services/Services";
 import Websites from "./components/websites/Websites";
 import WhatsAppFloat from "./components/WhatsAppFloat";
@@ -22,6 +23,7 @@ function App() {
           <Banner />
           <Features />
           <Services />
+          <AIIntegrations />
           <Websites />
           <Projects />
           <Resume />
