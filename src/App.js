@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Services from "./components/services/Services";
+import Websites from "./components/websites/Websites";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 // import Testimonial from "./components/tesimonial/Testimonial";
 
@@ -21,6 +22,7 @@ function App() {
           <Banner />
           <Features />
           <Services />
+          <Websites />
           <Projects />
           <Resume />
           {/* <Testimonial /> */}
