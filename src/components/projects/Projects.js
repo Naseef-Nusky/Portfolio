@@ -1,22 +1,22 @@
-import React from 'react'
-import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree, project4,project5, project6
- } from "../../assets/index";
-import ProjectsCard from './ProjectsCard';
+import React from "react";
+import Title from "../layouts/Title";
+import {
+  projectOne,
+  projectTwo,
+  projectThree,
+  project4,
+  project5,
+  project6,
+} from "../../assets/index";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
+    <section id="projects" className="w-full section-pad section-line">
       <div className="flex justify-center items-center text-center">
-        <Title
-          title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
-          des="My Projects"
-        />
+        <Title title="Selected work" des="My Projects" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <div className="grid grid-cols-1 mdl:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 xl:gap-8">
         <ProjectsCard
           title="ECommerce App with Admin Panel"
           des=" A scalable e-commerce platform that provides a seamless shopping experience with secure transactions and
@@ -51,12 +51,12 @@ const Projects = () => {
           src={project5}
         />
         <ProjectsCard
-          title="RecipeTracker-MERN"
-          des="RecipeTracker-MERN is a web app built with MongoDB, Express.js, React, and Node.js. It helps users add, manage, and track their favorite recipes in one place. Users can create, edit, and share recipes easily. Simple, organized, and perfect for food lovers!"
+          title="RecipeTracker"
+          des="RecipeTracker is a web app built with MongoDB, Express.js, React, and Node.js. It helps users add, manage, and track their favorite recipes in one place. Users can create, edit, and share recipes easily."
           src={project6}
         />
       </div>
     </section>
   );
-}
-export default Projects
+};
+export default Projects;

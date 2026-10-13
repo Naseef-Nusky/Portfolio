@@ -1,41 +1,43 @@
-import React from 'react'
+import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Media from './Media';
+import Media from "./Media";
 
 const LeftBanner = () => {
-    const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer."],
-      loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
-    });
+  const [text] = useTypewriter({
+    words: ["Full Stack Developer.", "Professional Coder."],
+    loop: true,
+    typeSpeed: 40,
+    deleteSpeed: 25,
+    delaySpeed: 2200,
+  });
+
   return (
-    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
-      <div className="flex flex-col gap-5">
-        {/* <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4> */}
-        <h1 className="text-6xl font-bold text-white">
-          Hi,
+    <div className="w-full lgl:w-1/2 flex flex-col gap-6 sm:gap-8 lgl:gap-10 text-center lgl:text-left items-center lgl:items-start">
+      <div className="flex flex-col gap-3 sm:gap-5 w-full">
+        <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.25em] text-designColor font-medium">
+          Portfolio
+        </p>
+        <h1 className="text-[1.65rem] xs:text-[1.85rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight whitespace-nowrap">
+          Naseef <span className="text-designColor">Nusky</span>
         </h1>
-        <h1 className="text-6xl font-bold text-white">
-          I'm <span className="text-designColor capitalize">Naseef Nusky</span>
-        </h1>
-        <h2 className="text-4xl font-bold text-white">
-          a <span>{text}</span>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 min-h-[2rem] sm:min-h-[2.5rem]">
+          <span className="text-white/90">{text}</span>
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
-            cursorColor="#ff014f"
+            cursorColor="#5eead4"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
-        I have 3 years of experience in building and designing software. I specialize in full-stack development using MEAN and MERN stacks.
+        <p className="text-sm sm:text-base md:text-lg font-bodyFont leading-7 tracking-wide text-lightText max-w-lg mx-auto lgl:mx-0">
+          I have experience in building and designing software. I specialize in
+          full-stack development.
         </p>
       </div>
-     {/* Media */}
-     <Media />
+      <div className="w-full flex justify-center lgl:justify-start">
+        <Media />
+      </div>
     </div>
   );
-}
+};
 
-export default LeftBanner
+export default LeftBanner;

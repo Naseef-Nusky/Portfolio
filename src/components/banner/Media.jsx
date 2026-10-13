@@ -1,43 +1,58 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaDownload, FaInstagram, FaGithub} from "react-icons/fa";
+import React from "react";
+import { FaLinkedinIn, FaDownload, FaGithub, FaWhatsapp } from "react-icons/fa";
+
 const Media = () => {
   return (
-    <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between pt-10">
-        <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">My Resume</h2>
-          <div className="">
-            <a 
-              href="/assets/resume.pdf" 
-              download 
-              className="bannerIcon">
-              <FaDownload />
-            </a>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
-          </h2>
-          <div className="flex gap-4">
-        <a href="https://www.linkedin.com/in/naseef-nusky/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-          <FaLinkedinIn />
-        </a>
-        <a href="https://github.com/Naseef-Nusky" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-          <FaGithub />
-        </a>
-        <a href="https://www.facebook.com/share/157KbRPkX3/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-          <FaFacebookF />
-        </a>
-        <a href="https://x.com/naseef_nuzkey?t=JLpobITQgukwXc_SsydPdA&s=09" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-          <FaTwitter />
-        </a>
-        <a href="https://www.instagram.com/naseefnus_key?igsh=MW4zZTNrZGhwM2locA==" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-          <FaInstagram />
+    <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 xl:gap-12 justify-center lgl:justify-between items-center lgl:items-start pt-2 w-full max-w-md lgl:max-w-none">
+      <div className="flex flex-col items-center lgl:items-start">
+        <h2 className="text-xs uppercase tracking-[0.2em] font-titleFont text-gray-500 mb-3 sm:mb-4">
+          My Resume
+        </h2>
+        <a
+          href="/assets/resume.pdf"
+          download
+          className="inline-flex items-center gap-2 px-5 h-11 rounded-xl bg-designColor text-bodyColor font-semibold text-sm hover:brightness-110 transition duration-300"
+        >
+          <FaDownload />
+          Download CV
         </a>
       </div>
+      <div className="flex flex-col items-center lgl:items-start">
+        <h2 className="text-xs uppercase tracking-[0.2em] font-titleFont text-gray-500 mb-3 sm:mb-4">
+          Find me in
+        </h2>
+        <div className="flex flex-nowrap justify-center items-center gap-2.5 sm:gap-3">
+          <a
+            href="https://www.linkedin.com/in/naseef-nusky/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
+          </a>
+          <a
+            href="https://github.com/Naseef-Nusky"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://wa.me/94712848215"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp />
+          </a>
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Media
+export default Media;

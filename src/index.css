@@ -1,29 +1,91 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .bannerIcon{
-        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
-    .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
-         }
-.bgOpacity {
-@apply bg-black bg-opacity-40;
-                  }
-    .contactInput{
-        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
     }
-.contactTextArea{
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
+  }
+
+  body {
+    @apply bg-bodyColor text-lightText font-bodyFont antialiased overflow-x-hidden;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ::selection {
+    background: rgba(94, 234, 212, 0.25);
+    color: #fff;
+  }
 }
+
+@layer components {
+  .bannerIcon {
+    @apply w-10 h-10 sm:w-11 sm:h-11 bg-white/[0.04] border border-white/10 text-gray-300 text-base sm:text-lg inline-flex items-center justify-center rounded-xl hover:border-designColor/50 hover:text-designColor md:hover:-translate-y-0.5 transition-colors duration-200 cursor-pointer;
+  }
+
+  .resumeLi {
+    @apply w-full h-12 sm:h-14 bg-white/[0.03] text-sm sm:text-base md:text-lg text-gray-400 flex justify-center cursor-pointer hover:text-white hover:bg-white/[0.06] duration-200 items-center border border-white/10 rounded-xl px-2 text-center;
+  }
+
+  .bgOpacity {
+    @apply bg-white/10;
+  }
+
+  .contactInput {
+    @apply w-full h-12 rounded-xl border border-white/10 bg-white/[0.03] text-lightText px-4 active:outline-none focus-visible:outline-none focus:border-designColor/60 duration-200 text-base;
+  }
+
+  .contactTextArea {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.03] text-lightText px-4 py-3 active:outline-none focus-visible:outline-none focus:border-designColor/60 duration-200 resize-none text-base;
+  }
+
+  .section-line {
+    @apply border-b border-white/[0.06];
+  }
+
+  /* No backdrop-blur on mobile — major FPS gain */
+  .surface-card {
+    @apply bg-surface border border-white/[0.06] rounded-2xl;
+  }
+
+  @media (min-width: 768px) {
+    .surface-card {
+      @apply bg-surface/90 shadow-shadowOne;
+    }
+  }
+
+  .section-pad {
+    @apply py-12 sm:py-16 md:py-20;
+  }
 }
 
 .active {
-    color: white;
+  color: #5eead4;
 }
-.scrollbar-hide::-webkit-scrollbar{
-    display: none;
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

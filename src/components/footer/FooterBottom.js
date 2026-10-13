@@ -1,13 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const FooterBottom = () => {
-  return (
-    <div className="w-full py-10">
-      <p className="text-center text-gray-500 text-base">
-        © 2025. All rights reserved by Naseef Nusky
-      </p>
-    </div>
-  );
-}
+  return null;
+};
 
-export default FooterBottom
+export default FooterBottom;
